@@ -226,7 +226,7 @@ nav .icon_burger .line {
   flex-direction: row;
   justify-content: center;
 }
-#about .about div {
+#about .about div:nth-child(even) {
   background-color: violet;
 }
 #about .about div h3 {
@@ -310,9 +310,9 @@ nav .icon_burger .line {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: url('https://images.all-free-download.com/images/graphicthumb/a_bunch_of_fresh_vegetables_fine_picture_167057.jpg');
+  background: url('https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063_960_720.jpg');
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
 }
 #review p {
   font-family: 'Chela One', cursive;
@@ -371,6 +371,9 @@ nav .icon_burger .line {
   background-color: violet;
   width: 500px;
 }
+#contact .contactus {
+  border: 3px solid rgb(250, 47, 81);
+}
 #contact .contact div h3 {
   font-family: 'Pacifico', cursive;
   margin-left: 50px;
@@ -410,6 +413,7 @@ nav .icon_burger .line {
   flex-direction: column;
   justify-content: space-around;
   background-color: #97bc62ff;
+  box-shadow: -2px -2px 5px black;
 }
 #footer .row {
   height: 100%;
