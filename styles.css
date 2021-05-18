@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 3px;
+}
+body::-webkit-scrollbar-thumb {
+  height: 6px;
+  background: #97bc62ff;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  padding: 0 5%;
+  z-index: 10;
+  background-color: #97bc62ff;
+  box-shadow: 3px 3px 5px black;
+}
+nav .logo {
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 1000;
+  color: green;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px 5px black;
+}
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .links li {
+  list-style: none;
+}
+nav .links a {
+  display: block;
+  padding: 1em;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2c5f2d;
+  font-family: 'Righteous', cursive;
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+  transition: 1s;
+}
+nav .links a:hover {
+  text-shadow: none;
+  transform: scale(1.2, 1.2);
+}
+nav .links a:active {
+  color: black;
+}
+#nav_toggle {
+  position: absolute;
+  top: -100px;
+}
+nav .icon_burger {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  display: none;
+  transform: translateY(-50%);
+}
+nav .icon_burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #fee715ff;
+  margin: 5px;
+  border-radius: 3px;
+}
+#home {
+  height: 100vh;
+  width: 100%;
+  background: url('https://image.freepik.com/free-vector/healthy-food-background_23-2148528348.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .heading {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Chela One', cursive;
+}
+#home .paragraph {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 700;
+  margin-top: 25px;
+  line-height: 30px;
+}
+#home button {
+  height: 50px;
+  width: 200px;
+  font-weight: 1000;
+  outline: none;
+  background: #2c5f2d;
+  border: 5px outset green;
+  transition: 1s;
+  color: white;
+  margin-top: 50px;
+}
+#home button:hover {
+  border: 5px inset #2c5f2d;
+}
+#product {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('https://rukminim1.flixcart.com/image/416/416/poster/w/j/n/healthy-food-wallpaper-rwpstr1835-medium-original-imaehmk3hbddjgtz.jpeg?q=70');
+  background-size: cover;
+  background-attachment: fixed;
+}
+#product p {
+  font-family: 'Chela One', cursive;
+  color: green;
+  font-size: 50px;
+  text-shadow: 2px 2px 3px orange;
+}
+#product .buttons {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#product .buttons button {
+  padding: 30px;
+  margin-left: 20px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  font-weight: 1000;
+  transition: 0.5s;
+}
+#product .buttons button:hover {
+  border-bottom: 5px solid black;
+  color: rgb(158, 18, 158);
+  transform: scale(1.1, 1.1);
+}
+#product #all {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#product #all .row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+#product #all .row .card {
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+}
+#product #all .row .card h4 {
+  color: rgb(122, 22, 22);
+  font-weight: 1000;
+  font-family: 'Pacifico', cursive;
+}
+#product #all .row .card h3 {
+  color: violet;
+}
+#product #all .row .card .rowbutton button {
+  padding: 5px;
+  margin-left: 10px;
+}
+#about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#about p {
+  font-family: 'Chela One', cursive;
+  color: green;
+  font-size: 50px;
+  text-shadow: 2px 2px 3px orange;
+  text-align: center;
+}
+#about .about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#about .about div {
+  background-color: violet;
+}
+#about .about div h3 {
+  font-family: 'Pacifico', cursive;
+  margin-left: 100px;
+  margin-top: 50px;
+  font-size: 25px;
+}
+#about .about div h5 {
+  font-family: 'Righteous', cursive;
+  margin-left: 40px;
+  margin-top: 25px;
+  font-size: 20px;
+  line-height: 40px;
+}
+#about .about div button {
+  height: 50px;
+  width: 200px;
+  margin-left: 40px;
+  margin-top: 25px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: 1000;
+  outline: none;
+  transition: 1s;
+  border: 2px solid white;
+}
+#about .about div button:hover {
+  border: 0;
+  transform: scale(1.1, 1.1);
+}
+#service {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#service p {
+  font-family: 'Chela One', cursive;
+  color: green;
+  font-size: 50px;
+  text-shadow: 2px 2px 3px orange;
+  text-align: center;
+}
+#service .row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+#service .row .card {
+  height: 250px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+}
+#service .row .card i {
+  font-size: 50px;
+}
+#service .row .card h3 {
+  font-family: 'Pacifico', cursive;
+  color: green;
+}
+#service .row .card p {
+  font-size: 20px;
+  color: gray;
+  text-shadow: none;
+  font-weight: 500;
+}
+#review {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: url('https://images.all-free-download.com/images/graphicthumb/a_bunch_of_fresh_vegetables_fine_picture_167057.jpg');
+  background-attachment: fixed;
+  background-size: contain;
+}
+#review p {
+  font-family: 'Chela One', cursive;
+  color: green;
+  font-size: 50px;
+  text-shadow: 2px 2px 3px orange;
+  text-align: center;
+}
+#review .row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+#review .row .card {
+  height: 250px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+}
+#review .row .card img {
+  margin-left: 170px;
+}
+#review .row .card p {
+  font-size: 20px;
+  color: gray;
+  text-shadow: none;
+  font-weight: 500;
+}
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#contact p {
+  font-family: 'Chela One', cursive;
+  color: green;
+  font-size: 50px;
+  text-shadow: 2px 2px 3px orange;
+  text-align: center;
+}
+#contact .contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#contact .contact div {
+  background-color: violet;
+  width: 500px;
+}
+#contact .contact div h3 {
+  font-family: 'Pacifico', cursive;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+#contact .contact div input {
+  height: 50px;
+  width: 350px;
+  margin-left: 50px;
+  margin-top: 5px;
+  outline: none;
+  border: 2px solid white;
+  background-color: transparent;
+}
+#contact .contact div button {
+  height: 40px;
+  width: 200px;
+  margin-left: 50px;
+  margin-top: 25px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: 1000;
+  outline: none;
+  transition: 1s;
+  border: 2px solid white;
+}
+#contact .contact div button:hover {
+  border: 0;
+  transform: scale(1.1, 1.1);
+}
+#footer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #97bc62ff;
+}
+#footer .row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+#footer .row .card {
+  height: 250px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#footer .row .card p {
+  font-size: 25px;
+  font-weight: 1000;
+  color: green;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px 5px black;
+}
+#footer .row .card h5 {
+  color: gray;
+}
+#footer h1 {
+  font-family: 'Chela One', cursive;
+  color: green;
+  text-shadow: 2px 2px 3px orange;
+  text-align: center;
+}
+#footer .row .card span {
+  font-size: 20px;
+}
+#footer .row .card span i {
+  font-size: 30px;
+  padding: 10px;
+}
+#footer h3 {
+  text-align: center;
+  color: grey;
+}
+@media screen and (max-width: 768px) {
+  nav .logo {
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
+  nav .links {
+    float: none;
+    z-index: 9;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    top: 100px;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background-image: url('https://image.freepik.com/free-vector/set-products-circle-healthy-food-fruits-vegetables-nuts-cartoon-flat_313437-278.jpg');
+    transition: all 1s ease-in-out;
+    background-size: cover;
+  }
+  nav .links a {
+    font-size: 20px;
+  }
+  nav .links a:hover {
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+  }
+  nav .icon_burger {
+    display: block;
+  }
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+  nav :checked ~ .icon_burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon_burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon_burger .line:nth-child(2) {
+    opacity: 0;
+  }
+  #product #all .row {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  #product #all .row .card {
+    height: 200px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    margin-top: 5px;
+  }
+  #product #all .row .card .rowbutton {
+    display: flex;
+    flex-direction: column;
+  }
+  #product #all .row .card .rowbutton button {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  #product #all .row .card h4 {
+    color: rgb(122, 22, 22);
+    font-weight: 1000;
+    font-family: 'Pacifico', cursive;
+  }
+  #product #all .row .card h3 {
+    color: violet;
+  }
+  #about .about img {
+    height: 500px;
+    width: 400px;
+  }
+  #about .about div h3 {
+    font-family: 'Pacifico', cursive;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 25px;
+  }
+  #about .about div h5 {
+    font-family: 'Righteous', cursive;
+    margin-left: 40px;
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  #contact .contact div h3 {
+    font-family: 'Pacifico', cursive;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  #contact .contact div {
+    background-color: violet;
+    width: 400px;
+  }
+  #contact .contact div input {
+    height: 50px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 5px;
+    outline: none;
+    border: 2px solid white;
+    background-color: transparent;
+  }
+  #service .row .card {
+    height: 250px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+  }
+  #review .row .card {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+  }
+  #review .row .card img {
+    margin-left: 140px;
+  }
+}
